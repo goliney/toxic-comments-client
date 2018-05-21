@@ -21,9 +21,6 @@ coverage
 # nyc test coverage
 .nyc_output
 
-# Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
-.grunt
-
 # Dependency directories
 node_modules
 
@@ -35,6 +32,9 @@ node_modules
 
 # Yarn Integrity file
 .yarn-integrity
+
+# Parcel bundler cache
+.cache
 
 # User-specific stuff:
 .idea

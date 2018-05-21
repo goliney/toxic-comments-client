@@ -1,44 +1,33 @@
 {
-  "name": "my-project-name",
+  "name": "toxic-comments-client",
   "version": "0.0.1",
   "engines": {
     "node": ">=6"
   },
   "scripts": {
-    "build": "./node_modules/webpack/bin/webpack.js",
-    "dev": "./node_modules/.bin/webpack-dev-server",
+    "build": "./node_modules/.bin/parcel build src/index.html --public-url ./",
+    "dev": "./node_modules/.bin/parcel src/index.html",
     "prettier": "prettier --write src/**/* test/**/*",
     "eslint": "eslint src/**/*.js test/**/*.js",
     "eslint-check": "eslint --print-config .eslintrc.json | eslint-config-prettier-check",
     "pretest": "npm-run-all eslint-check eslint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "name <email>",
   "license": "MIT",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
-    "babel-core": "6.26.0",
-    "babel-loader": "7.1.2",
-    "babel-plugin-external-helpers": "6.22.0",
-    "babel-preset-env": "1.6.1",
-    "css-loader": "0.28.7",
-    "eslint": "4.11.0",
+    "babel-preset-env": "1.7.0",
+    "eslint": "4.19.1",
     "eslint-config-airbnb-base": "12.1.0",
-    "eslint-config-prettier": "2.6.0",
-    "eslint-plugin-import": "2.8.0",
+    "eslint-config-prettier": "2.9.0",
+    "eslint-plugin-import": "2.12.0",
     "eslint-plugin-json": "1.2.0",
-    "eslint-plugin-prettier": "2.3.1",
-    "html-webpack-plugin": "2.30.1",
-    "jest-cli": "21.2.1",
-    "node-sass": "4.6.1",
-    "npm-run-all": "4.1.1",
-    "postcss-loader": "2.0.8",
-    "prettier": "1.7.4",
-    "prettier-eslint": "8.2.1",
-    "sass-loader": "6.0.6",
-    "style-loader": "0.19.0",
-    "webpack": "3.8.1",
-    "webpack-dev-server": "2.9.4"
+    "eslint-plugin-prettier": "2.6.0",
+    "jest-cli": "22.4.4",
+    "node-sass": "4.9.0",
+    "npm-run-all": "4.1.3",
+    "parcel-bundler": "1.8.1",
+    "prettier": "1.12.1",
+    "prettier-eslint": "8.8.1"
   }
 }
