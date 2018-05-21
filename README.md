@@ -9,7 +9,7 @@
 yarn run build
 ```
 
-It will create `build/` folder.
+It will create `/dist` folder.
 
 **Start dev server:**
 
@@ -17,7 +17,4 @@ It will create `build/` folder.
 yarn run dev
 ```
 
-It will run development server on http://localhost:8888
-
-
-Happy coding!
+It will run development server on http://localhost:1234
