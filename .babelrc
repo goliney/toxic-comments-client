@@ -8,7 +8,8 @@
         },
         "modules": false
       }
-    ]
+    ],
+    "preact"
   ],
   "env": {
     "test": {
@@ -22,6 +23,7 @@
             "modules": "commonjs"
           }
         ],
+        "preact",
         "jest"
       ]
     }
